@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ag-config-service" />
+        <module name="ag-eureka" />
+        <module name="ag-ribbon" />
+        <module name="ag-user" />
+        <module name="eg-feign" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ag-cloud" target="1.6" />
+      <module name="ag-config-service" target="1.8" />
+      <module name="ag-eureka" target="1.6" />
+      <module name="ag-feign" target="1.8" />
+      <module name="ag-ribbon" target="1.8" />
+      <module name="ag-user" target="1.6" />
+      <module name="eg-feign" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

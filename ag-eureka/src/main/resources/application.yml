@@ -1,0 +1,20 @@
+
+#定义端口
+server:
+  port: 8070
+eureka:
+#设置访问路径
+  instance:
+      hostname: localhost
+  client:
+  #禁止注册eureka服务(不再注册中心注册)
+    registerWithEureka: false
+    #获取注册表也关闭
+    fetchRegistry: false
+    serviceUrl:
+          defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#定义名称
+spring:
+  application:
+    name: ag-eureka
+

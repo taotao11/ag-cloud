@@ -1,0 +1,23 @@
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8070/eureka/
+#端口号
+server:
+  port: 8077
+#应用名称
+spring:
+  application:
+    name: ag-config-service
+# git管理配置，此地址构成：git地址(https://git.oschina.net/happyangellxq520/)+项目地址(spring-cloud-demo)
+  cloud:
+    config:
+      server:
+            git:
+              uri: https://gitee.com/ttchl/springcloud
+#配置仓库路径下的相对搜索位置，可以配置多个 :是一个目录，在此目录下就是存放着application-xxx.properties
+              searchPaths: cpnfig-repo
+#访问git仓库的用户名
+              username: 9020518289@qq.com
+#访问git仓库的用户密码
+              password: tt18883156885
