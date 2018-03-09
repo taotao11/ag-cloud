@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/ag-ribbon/pom.xml" />
         <option value="$PROJECT_DIR$/eg-feign/pom.xml" />
         <option value="$PROJECT_DIR$/ag-config-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ag-config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/ag-web/pom.xml" />
       </list>
     </option>
   </component>

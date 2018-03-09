@@ -3,10 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ag-cloud.iml" filepath="$PROJECT_DIR$/ag-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ag-config-client/ag-config-client.iml" filepath="$PROJECT_DIR$/ag-config-client/ag-config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/ag-config-service/ag-config-service.iml" filepath="$PROJECT_DIR$/ag-config-service/ag-config-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/ag-eureka/ag-eureka.iml" filepath="$PROJECT_DIR$/ag-eureka/ag-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/ag-ribbon/ag-ribbon.iml" filepath="$PROJECT_DIR$/ag-ribbon/ag-ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/ag-user/ag-user.iml" filepath="$PROJECT_DIR$/ag-user/ag-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ag-web/ag-web.iml" filepath="$PROJECT_DIR$/ag-web/ag-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/eg-feign/eg-feign.iml" filepath="$PROJECT_DIR$/eg-feign/eg-feign.iml" />
     </modules>
   </component>
