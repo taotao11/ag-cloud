@@ -1,0 +1,38 @@
+server:
+  port: 8080
+spring:
+    #指定应用名称
+  application:
+            name: ag-jpa
+  thymeleaf:
+   cache: false
+   mode: LEGACYHTML5
+  datasource:
+     driver-class-name: com.mysql.jdbc.Driver
+     username: root
+     password: root
+     url: jdbc:mysql://localhost:3306/test?characterEncoding=utf-8
+  jpa:
+      database : MYSQL
+      show-sql : true
+      hibernate:
+        ddl-auto : update
+        naming-strategy : org.hibernate.cfg.ImprovedNamingStrategy
+      properties:
+        hibernate:
+          dialect : org.hibernate.dialect.MySQL5Dialect
+# database name
+  redis:
+    database: 0
+# server host1
+    host: 127.0.0.1
+# server password
+#spring.redis.password=
+#connection port
+    port: 6379
+# pool settings ...
+    pool:
+      max-idle: 8
+      min-idle: 0
+      max-active: 8
+      max-wait: -1
