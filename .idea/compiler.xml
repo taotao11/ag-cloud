@@ -10,6 +10,7 @@
         <module name="ag-config-service" />
         <module name="ag-eureka" />
         <module name="ag-ribbon" />
+        <module name="ag-security" />
         <module name="ag-user" />
         <module name="ag-web" />
         <module name="eg-feign" />
@@ -22,6 +23,7 @@
       <module name="ag-eureka" target="1.6" />
       <module name="ag-feign" target="1.8" />
       <module name="ag-ribbon" target="1.8" />
+      <module name="ag-security" target="1.8" />
       <module name="ag-user" target="1.6" />
       <module name="ag-web" target="1.8" />
       <module name="eg-feign" target="1.8" />
