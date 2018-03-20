@@ -9,6 +9,7 @@
         <module name="ag-config-client" />
         <module name="ag-config-service" />
         <module name="ag-eureka" />
+        <module name="ag-jpa" />
         <module name="ag-ribbon" />
         <module name="ag-security" />
         <module name="ag-user" />
@@ -22,6 +23,7 @@
       <module name="ag-config-service" target="1.8" />
       <module name="ag-eureka" target="1.6" />
       <module name="ag-feign" target="1.8" />
+      <module name="ag-jpa" target="1.8" />
       <module name="ag-ribbon" target="1.8" />
       <module name="ag-security" target="1.8" />
       <module name="ag-user" target="1.6" />

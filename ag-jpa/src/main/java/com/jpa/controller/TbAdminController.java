@@ -1,6 +1,7 @@
 package com.jpa.controller;
 
 import com.jpa.entity.TbAdmin;
+
 import com.jpa.service.TbAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/ag-config-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ag-config-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ag-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ag-jpa" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ag-ribbon" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ag-security" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ag-user" charset="UTF-8" />

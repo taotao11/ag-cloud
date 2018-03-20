@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/ag-config-client/pom.xml" />
         <option value="$PROJECT_DIR$/ag-web/pom.xml" />
         <option value="$PROJECT_DIR$/ag-security/pom.xml" />
+        <option value="$PROJECT_DIR$/ag-jpa/pom.xml" />
       </list>
     </option>
   </component>

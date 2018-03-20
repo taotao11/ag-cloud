@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/ag-config-client/ag-config-client.iml" filepath="$PROJECT_DIR$/ag-config-client/ag-config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/ag-config-service/ag-config-service.iml" filepath="$PROJECT_DIR$/ag-config-service/ag-config-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/ag-eureka/ag-eureka.iml" filepath="$PROJECT_DIR$/ag-eureka/ag-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ag-jpa/ag-jpa.iml" filepath="$PROJECT_DIR$/ag-jpa/ag-jpa.iml" />
       <module fileurl="file://$PROJECT_DIR$/ag-ribbon/ag-ribbon.iml" filepath="$PROJECT_DIR$/ag-ribbon/ag-ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/ag-security/ag-security.iml" filepath="$PROJECT_DIR$/ag-security/ag-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/ag-user/ag-user.iml" filepath="$PROJECT_DIR$/ag-user/ag-user.iml" />
