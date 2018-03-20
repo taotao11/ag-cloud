@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -16,6 +17,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
  */
 @Configuration //配置功能
 @EnableWebSecurity //注解开启Spring Security的功能
+@EnableGlobalMethodSecurity//开启方法安全验证
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
@@ -28,10 +30,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
        http
            .authorizeRequests()//定义哪些URL需要被保护、哪些不需要被保护
                .antMatchers("/","/index","/save").permitAll()//指定了/和/home不需要任何认证就可以访问，其他的路径都必须通过身份验证。
+               .antMatchers("/admin/**").hasRole("admin")// /admin/** 需要admin 权限
+               //任何以"/db"开头的请求同时要求用户具有"ROLE_ADMIN"和"ROLE_DBA"角色。
+               .antMatchers( "/db/**").access("hasRole('ADMIN') and hasRole('DBA')")
+               //任何没有匹配上的其他的url请求，只需要用户被验证。
                .anyRequest().authenticated()
                .and()
            .formLogin()//需要用户登录时候，转到的登录页面。
                 .loginPage("/login").defaultSuccessUrl("/hello")
+               .failureForwardUrl("/hello")//跳转错误页面
+               .successForwardUrl("/hello")
                 .permitAll()
                 .and()
                 .logout().permitAll()
