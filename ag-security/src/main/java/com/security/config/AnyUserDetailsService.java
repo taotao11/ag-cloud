@@ -38,7 +38,7 @@ public class AnyUserDetailsService implements UserDetailsService {
      * 权限字符串转化
      *
      * 如 "USER,ADMIN" -> SimpleGrantedAuthority("USER") + SimpleGrantedAuthority("ADMIN")
-     *
+     *@Secured("ROLE_VIP") // 需要ROLE_VIP权限可访问
      * @param roleStr 权限字符串
      */
     private List<SimpleGrantedAuthority> createAuthorities(String roleStr){
